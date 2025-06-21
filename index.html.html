@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atmasiddhi Shastra Course - Journey to Self-Realization</title>
+    <title>Embark on the Journey of Self-Realization - Shri Atmasiddhi Shastra Online Course</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <style>
         :root {
             --gold-color: #bb965e;
@@ -14,6 +14,7 @@
             --dark-brown: #885830;
             --serif: "Libre Baskerville", serif;
             --sans-serif: "Open Sans", "Raleway", sans-serif;
+            --display-font: "Crimson Text", serif;
             --intro-bg-color: black;
             --intro-text-color: white;
         }
@@ -106,15 +107,16 @@
         }
 
         .intro-header {
-            font-weight: 500;
-            font-size: 6.5em;
-            letter-spacing: 0.05em;
-            font-family: var(--sans-serif);
+            font-weight: 400;
+            font-size: 4.5em;
+            letter-spacing: 0.02em;
+            font-family: var(--display-font);
             text-shadow: -1px -1px 1px var(--beige), 1px 1px 1px #000;
             margin-bottom: 1rem;
             background: -webkit-repeating-linear-gradient(90deg, #9f7928 0%, #a87b32 10%, #865c25 33%, #a87b32 61%, #9f7928 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            line-height: 1.2;
         }
 
         .hero-subtitle {
@@ -170,11 +172,11 @@
             border-color: var(--dark-brown);
         }
 
-        /* Six Fundamentals Section */
-        .six-fundas {
-            background: black;
+        /* Course Introduction Section */
+        .course-intro {
+            background: white;
             padding: 10vh 0;
-            color: rgb(200, 200, 200);
+            text-align: center;
         }
 
         .container {
@@ -183,96 +185,156 @@
             padding: 0 20px;
         }
 
-        .container-header {
-            font-weight: 400;
-            font-family: var(--sans-serif);
-            font-size: 12vh;
-            color: var(--gold-color);
+        .section-header {
+            font-family: var(--serif);
+            font-size: 3.5rem;
+            color: var(--dark-brown);
+            margin-bottom: 2rem;
             text-align: center;
-            margin-bottom: 4rem;
         }
 
-        .truths-grid {
+        .section-description {
+            font-size: 1.3rem;
+            color: var(--dark-gold-color);
+            line-height: 1.7;
+            max-width: 800px;
+            margin: 0 auto 4rem;
+        }
+
+        .intro-points {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-            margin-top: 4rem;
+            margin-top: 3rem;
         }
 
-        .funda-card {
-            border: 2px solid var(--gold-color);
-            border-radius: 10px;
-            padding: 3rem 2rem;
+        .intro-point {
+            background: rgba(221, 205, 169, 0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid var(--beige);
             text-align: center;
-            font-family: var(--sans-serif);
-            background: rgba(187, 150, 94, 0.05);
-            transition: all 0.3s ease;
         }
 
-        .funda-card:hover {
-            background: rgba(187, 150, 94, 0.1);
-            transform: translateY(-5px);
-        }
-
-        .funda-card .title {
-            font-size: 2rem;
+        .intro-point i {
+            font-size: 2.5rem;
             color: var(--gold-color);
             margin-bottom: 1rem;
+            display: block;
+        }
+
+        .intro-point h3 {
+            color: var(--dark-brown);
             font-family: var(--serif);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
         }
 
-        .funda-card p {
-            font-size: 1.1rem;
+        .intro-point p {
+            color: var(--dark-gold-color);
             line-height: 1.6;
-            color: var(--beige);
         }
 
-        /* Course Details Section */
-        .about-as {
-            background: white;
+        /* Course Highlights Section */
+        .course-highlights {
+            background: radial-gradient(circle, rgba(250, 247, 242, 1) 24%, rgba(229, 213, 200, 1) 100%);
             padding: 10vh 0;
         }
 
-        .atmasiddhi-shastra {
-            letter-spacing: 1.7px;
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .highlight-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(187, 150, 94, 0.1);
+            border: 1px solid var(--beige);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .highlight-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(187, 150, 94, 0.2);
+        }
+
+        .highlight-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gold-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin: 0 auto 1rem;
+        }
+
+        .highlight-card h3 {
+            color: var(--dark-brown);
             font-family: var(--serif);
-            background: -webkit-repeating-linear-gradient(180deg, var(--beige) 0%, #a87b32 10%, var(--beige) 33%, #a87b32 61%, var(--beige) 100%);
-            font-size: 5em;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .highlight-card p {
+            color: var(--dark-gold-color);
+            line-height: 1.6;
+        }
+
+        /* Course Structure Section - Compact Treasure Map Style */
+        .course-structure {
+            background: black;
+            padding: 8vh 0;
+            color: white;
+        }
+
+        .container-header {
+            font-weight: 400;
+            font-family: var(--sans-serif);
+            font-size: 6vh;
+            color: var(--gold-color);
             text-align: center;
             margin-bottom: 3rem;
         }
 
-        .course-details-grid {
+        .treasure-map {
+            max-width: 1000px;
+            margin: 0 auto;
             display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 4rem;
-            margin-top: 3rem;
-        }
-
-        .curriculum-container {
-            background: rgba(221, 205, 169, 0.1);
-            padding: 3rem;
-            border-radius: 15px;
-            border: 1px solid var(--beige);
-        }
-
-        .module-item {
-            padding: 1.5rem 0;
-            border-bottom: 1px solid var(--beige);
-            display: flex;
-            align-items: center;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 1.5rem;
+            position: relative;
         }
 
-        .module-item:last-child {
-            border-bottom: none;
+        .treasure-item {
+            background: rgba(187, 150, 94, 0.1);
+            padding: 1.5rem;
+            border-radius: 15px;
+            border: 2px solid var(--gold-color);
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
         }
 
-        .module-number {
-            width: 50px;
-            height: 50px;
+        .treasure-item:hover {
+            transform: translateY(-5px);
+            background: rgba(187, 150, 94, 0.2);
+        }
+
+        .treasure-number {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 30px;
+            height: 30px;
             background: var(--gold-color);
             color: white;
             border-radius: 50%;
@@ -281,177 +343,352 @@
             justify-content: center;
             font-weight: bold;
             font-family: var(--serif);
-            flex-shrink: 0;
+            font-size: 0.9rem;
         }
 
-        .module-content h4 {
-            color: var(--dark-brown);
-            font-family: var(--serif);
-            font-size: 1.3rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .module-content p {
-            color: var(--dark-gold-color);
-            font-size: 1rem;
-        }
-
-        .course-info-card {
-            background: rgba(221, 205, 169, 0.1);
-            padding: 2rem;
-            border-radius: 15px;
-            border: 1px solid var(--beige);
-            height: fit-content;
-            position: sticky;
-            top: 120px;
-        }
-
-        .info-item {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            padding: 1rem 0;
-            border-bottom: 1px solid var(--beige);
-        }
-
-        .info-item:last-child {
-            border-bottom: none;
-        }
-
-        .info-icon {
-            width: 40px;
-            height: 40px;
-            background: var(--gold-color);
-            color: white;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.1rem;
-        }
-
-        .info-text {
-            color: var(--dark-gold-color);
-            font-family: var(--sans-serif);
-        }
-
-        .info-text strong {
-            color: var(--dark-brown);
-            font-family: var(--serif);
-        }
-
-        .price-display {
-            font-size: 3rem;
-            font-weight: bold;
+        .treasure-item h4 {
             color: var(--gold-color);
-            text-align: center;
-            margin: 2rem 0;
             font-family: var(--serif);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            margin-top: 0.5rem;
         }
 
-        /* Awards Section */
-        .awards {
-            padding: 60px 0;
-            background: radial-gradient(circle, rgba(250, 247, 242, 1) 24%, rgba(229, 213, 200, 1) 100%);
-            text-align: center;
+        .treasure-item p {
+            color: var(--beige);
+            font-size: 0.9rem;
+            line-height: 1.4;
         }
 
-        .awards-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 3rem;
-            flex-wrap: wrap;
+        /* How It Works Section */
+        .how-it-works {
+            background: white;
+            padding: 8vh 0;
         }
 
-        .award-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .num-one {
-            font-family: var(--serif);
-            font-size: 6.5em;
-            font-weight: 800;
-            color: var(--dark-brown);
-            line-height: 1;
-        }
-
-        .award-desc {
-            font-family: var(--sans-serif);
-            font-size: 1.7em;
-            font-weight: 500;
-            color: var(--dark-brown);
-        }
-
-        .ribbon {
-            font-size: 1.5em;
-            text-transform: uppercase;
-            font-weight: 800;
-            border: 2px solid var(--dark-brown);
-            border-left: none;
-            border-right: none;
-            padding: 0.75em 2em;
-            margin: 1rem 0;
-            position: relative;
-            background: rgba(221, 205, 169, 0.3);
-            color: var(--dark-brown);
-        }
-
-        /* Testimonials */
-        .testimonials {
-            background: var(--gold-color);
-            padding: 10vh 0;
-        }
-
-        .testimonial-grid {
+        .steps-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
             margin-top: 3rem;
         }
 
-        .testimonial-card {
-            background: linear-gradient(to left bottom, #8c6941, #a07c4d, #b4855c, #b6885c, #b78b5c, #b98f5d, #a07c4d, #8c6941);
-            padding: 3rem;
+        .step-card {
+            background: rgba(221, 205, 169, 0.1);
+            padding: 2.5rem;
             border-radius: 15px;
+            border: 1px solid var(--beige);
+            text-align: center;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .step-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(187, 150, 94, 0.1);
+        }
+
+        .step-number {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 40px;
+            background: var(--gold-color);
             color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-family: var(--serif);
+            font-size: 1.2rem;
+        }
+
+        .step-card h3 {
+            color: var(--dark-brown);
+            font-family: var(--serif);
+            font-size: 1.4rem;
+            margin: 1rem 0;
+        }
+
+        .step-card p {
+            color: var(--dark-gold-color);
+            line-height: 1.6;
+        }
+
+        /* Learning Components Section */
+        .learning-components {
+            background: radial-gradient(circle, rgba(250, 247, 242, 1) 24%, rgba(229, 213, 200, 1) 100%);
+            padding: 8vh 0;
+        }
+
+        .components-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .component-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            border: 1px solid var(--beige);
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(187, 150, 94, 0.1);
+        }
+
+        .component-card:hover {
+            background: rgba(221, 205, 169, 0.1);
+            transform: translateY(-3px);
+        }
+
+        .component-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gold-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin: 0 auto 1.5rem;
+        }
+
+        .component-card h3 {
+            color: var(--dark-brown);
+            font-family: var(--serif);
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Who Is This For Section */
+        .target-audience {
+            background: white;
+            padding: 8vh 0;
+        }
+
+        .audience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .audience-item {
+            background: rgba(221, 205, 169, 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border: 1px solid var(--beige);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .audience-item:hover {
+            background: rgba(221, 205, 169, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .audience-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--gold-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .audience-text {
+            color: var(--dark-brown);
+            font-family: var(--serif);
+            font-weight: 600;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background: var(--gold-color);
+            padding: 8vh 0;
+        }
+
+        .testimonial-intro {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .testimonial-intro h2 {
+            font-family: var(--serif);
+            font-size: 3.5rem;
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-intro p {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .video-testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .video-container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 1rem;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .video-container:hover {
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+
+        .video-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .video-container h4 {
+            font-family: var(--serif);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
             text-align: center;
         }
 
-        .testimonial-text {
-            font-family: var(--serif);
-            font-size: 1.5em;
-            line-height: 1.6;
-            margin-bottom: 2rem;
-            font-style: italic;
+        .video-container p {
+            opacity: 0.8;
+            font-size: 0.9rem;
+            text-align: center;
         }
 
-        .testimonial-author {
-            font-family: var(--sans-serif);
-            font-size: 1.2em;
-            font-weight: 600;
-            text-transform: uppercase;
+        /* Why SRMD Section */
+        .why-srmd {
+            background: white;
+            padding: 8vh 0;
+        }
+
+        .srmd-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            margin-top: 3rem;
+            align-items: center;
+        }
+
+        .gurudev-image-container {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .gurudev-image {
+            width: 300px;
+            height: 400px;
+            background: rgba(221, 205, 169, 0.2);
+            border-radius: 15px;
+            border: 3px solid var(--gold-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--dark-gold-color);
+            font-family: var(--serif);
+            font-size: 1.1rem;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .gurudev-info {
+            background: rgba(221, 205, 169, 0.1);
+            padding: 3rem;
+            border-radius: 15px;
+            border: 1px solid var(--beige);
+        }
+
+        .gurudev-quote {
+            font-family: var(--serif);
+            font-size: 1.3rem;
+            font-style: italic;
+            color: var(--dark-brown);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+            text-align: center;
+            border-left: 4px solid var(--gold-color);
+            padding-left: 2rem;
+        }
+
+        .gurudev-details h3 {
+            color: var(--dark-brown);
+            font-family: var(--serif);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .gurudev-details p {
+            color: var(--dark-gold-color);
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+
+        .achievement-list {
+            list-style: none;
+            margin-top: 2rem;
+        }
+
+        .achievement-list li {
+            color: var(--dark-gold-color);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .achievement-list li::before {
+            content: "✦";
+            color: var(--gold-color);
+            font-weight: bold;
         }
 
         /* FAQ Section */
         .faq-section {
-            background: white;
-            padding: 10vh 0;
+            background: radial-gradient(circle, rgba(250, 247, 242, 1) 24%, rgba(229, 213, 200, 1) 100%);
+            padding: 8vh 0;
         }
 
         .faq-container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
         }
 
         .faq-item {
-            background: rgba(221, 205, 169, 0.1);
+            background: white;
             margin-bottom: 1rem;
             border-radius: 10px;
             border: 1px solid var(--beige);
             overflow: hidden;
+            box-shadow: 0 2px 10px rgba(187, 150, 94, 0.1);
         }
 
         .faq-question {
@@ -471,7 +708,7 @@
         }
 
         .faq-question:hover {
-            background: rgba(221, 205, 169, 0.2);
+            background: rgba(221, 205, 169, 0.1);
         }
 
         .faq-answer {
@@ -486,46 +723,34 @@
             display: block;
         }
 
-        /* Registration Section */
-        .registration {
+        /* Call to Action Section */
+        .cta-section {
             background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(47, 36, 26, 1) 60%, rgba(221, 205, 169, 1) 100%);
-            padding: 10vh 0;
+            padding: 8vh 0;
             color: white;
             text-align: center;
         }
 
-        .registration-form {
-            max-width: 500px;
-            margin: 3rem auto 0;
-            background: rgba(221, 205, 169, 0.1);
-            padding: 3rem;
-            border-radius: 15px;
-            border: 1px solid var(--beige);
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-            text-align: left;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: 600;
+        .cta-content h2 {
             font-family: var(--serif);
-            color: var(--beige);
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
         }
 
-        .form-group input,
-        .form-group select {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid var(--beige);
-            border-radius: 5px;
-            font-size: 1rem;
-            background: rgba(255, 255, 255, 0.9);
-            color: var(--dark-gold-color);
-            font-family: var(--sans-serif);
+        .cta-content p {
+            font-size: 1.2rem;
+            color: var(--beige);
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            line-height: 1.6;
+        }
+
+        .cta-buttons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         /* Footer */
@@ -602,33 +827,41 @@
             }
 
             .intro-header {
-                font-size: 4em;
+                font-size: 3em;
             }
 
             .container-header {
-                font-size: 8vh;
+                font-size: 4vh;
             }
 
-            .course-details-grid {
+            .srmd-content {
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
 
-            .testimonial-grid {
+            .cta-buttons-grid {
                 grid-template-columns: 1fr;
             }
 
-            .awards-container {
-                flex-direction: column;
-                gap: 1rem;
+            .section-header {
+                font-size: 2.5rem;
             }
 
-            .truths-grid {
+            .gurudev-quote {
+                font-size: 1.1rem;
+            }
+
+            .treasure-map {
                 grid-template-columns: 1fr;
             }
 
-            .atmasiddhi-shastra {
-                font-size: 3em;
+            .steps-container {
+                grid-template-columns: 1fr;
+            }
+
+            .gurudev-image {
+                width: 250px;
+                height: 300px;
             }
         }
 
@@ -695,59 +928,6 @@
         .stagger-5 { transition-delay: 0.5s; }
         .stagger-6 { transition-delay: 0.6s; }
 
-        /* Parallax Effects */
-        .parallax {
-            transform: translateY(0);
-            transition: transform 0.1s linear;
-        }
-
-        /* Text Reveal Animation */
-        .text-reveal {
-            overflow: hidden;
-            position: relative;
-        }
-
-        .text-reveal::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: var(--gold-color);
-            transform: translateX(-100%);
-            transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        }
-
-        .text-reveal.animate::before {
-            transform: translateX(100%);
-        }
-
-        /* Floating Animation */
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-        }
-
-        .float {
-            animation: float 3s ease-in-out infinite;
-        }
-
-        /* Gradient Text Animation */
-        .gradient-text {
-            background: linear-gradient(45deg, var(--gold-color), var(--beige), var(--dark-brown));
-            background-size: 200% 200%;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: gradientShift 3s ease infinite;
-        }
-
-        @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
         /* Scroll Progress Indicator */
         .scroll-progress {
             position: fixed;
@@ -758,66 +938,6 @@
             background: linear-gradient(90deg, var(--gold-color), var(--beige));
             z-index: 1000;
             transition: width 0.1s ease;
-        }
-
-        /* Card Hover Enhancements */
-        .funda-card {
-            position: relative;
-            overflow: hidden;
-        }
-
-        .funda-card::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(187, 150, 94, 0.1) 0%, transparent 70%);
-            transform: scale(0);
-            transition: transform 0.6s ease;
-        }
-
-        .funda-card:hover::before {
-            transform: scale(1);
-        }
-
-        /* Testimonial Card Animations */
-        .testimonial-card {
-            position: relative;
-            overflow: hidden;
-        }
-
-        .testimonial-card::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
-            transition: left 0.8s ease;
-        }
-
-        .testimonial-card:hover::after {
-            left: 100%;
-        }
-
-        /* Section Transitions */
-        .section-transition {
-            opacity: 0;
-            transform: translateY(100px);
-            transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        }
-
-        .section-transition.animate {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Count Up Animation */
-        .count-up {
-            font-variant-numeric: tabular-nums;
         }
 
         /* Magnetic Button Effect */
@@ -839,15 +959,15 @@
     <nav class="navigation">
         <div class="container">
             <div class="logo-container">
-                <i class="fas fa-om float"></i>
-                Atmasiddhi Shastra
+                <i class="fas fa-om"></i>
+                Atmasiddhi Shastra Course
             </div>
             <div class="nav-middle">
-                <a href="#overview" class="nav-item">Overview</a>
-                <a href="#curriculum" class="nav-item">Curriculum</a>
-                <a href="#instructor" class="nav-item">Instructor</a>
-                <a href="#testimonials" class="nav-item">Reviews</a>
-                <a href="#register" class="nav-item">Register</a>
+                <a href="#course-intro" class="nav-item">Course</a>
+                <a href="#highlights" class="nav-item">Highlights</a>
+                <a href="#structure" class="nav-item">Structure</a>
+                <a href="#testimonials" class="nav-item">Testimonials</a>
+                <a href="#enroll" class="nav-item">Enroll</a>
             </div>
         </div>
     </nav>
@@ -855,245 +975,452 @@
     <!-- Hero Section -->
     <section class="introduction">
         <div class="headers">
-            <h1 class="intro-header text-reveal">Journey to Self-Realization</h1>
-            <p class="hero-subtitle fade-in-up stagger-1">Master the Six Spiritual Truths of Atmasiddhi Shastra</p>
+            <h1 class="intro-header">Embark on the Journey of Self-Realization</h1>
+            <p class="hero-subtitle fade-in-up stagger-1">A guided, interactive exploration of the timeless wisdom of Shri Atmasiddhi Shastra</p>
             <p class="hero-description fade-in-up stagger-2">
-                Embark on a transformative journey through Shrimad Rajchandraji's timeless masterpiece. 
-                Discover the profound wisdom that has guided spiritual seekers for over 125 years in this 
-                comprehensive course designed for modern practitioners.
+                Discover the profound wisdom that has guided spiritual seekers for over 125 years. 
+                This comprehensive online course offers a transformative journey through Shrimad Rajchandraji's 
+                masterpiece, guided by Pujya Gurudevshri Rakeshji's enlightening pravachans.
             </p>
             <div class="cta-buttons fade-in-up stagger-3">
-                <a href="#register" class="pre-order primary magnetic-btn">Start Your Journey</a>
-                <a href="#overview" class="pre-order magnetic-btn">Learn More</a>
+                <a href="#enroll" class="pre-order primary magnetic-btn">Take the First Step</a>
+                <a href="#course-intro" class="pre-order magnetic-btn">Learn More</a>
             </div>
         </div>
     </section>
 
-    <!-- Six Fundamentals -->
-    <section id="overview" class="six-fundas section-transition">
+    <!-- Course Introduction -->
+    <section id="course-intro" class="course-intro scroll-animate">
         <div class="container">
-            <h2 class="container-header text-reveal">The Six Universal Truths</h2>
-            <p class="fade-in-up stagger-1" style="text-align: center; font-size: 1.5rem; color: var(--beige); margin-bottom: 4rem;">
-                Experience the profound wisdom of Atmasiddhi Shastra through a structured journey 
-                that reveals the fundamental nature of the soul and the path to liberation.
+            <h2 class="section-header">Why Study Shri Atmasiddhi Shastra?</h2>
+            <p class="section-description">
+                Shri Atmasiddhi Shastra stands as one of the most profound spiritual texts ever written, 
+                offering a clear roadmap to self-realization through six fundamental truths. 
+                This course brings together the timeless relevance of this 19th-century Jain scripture 
+                with modern pedagogical approaches.
             </p>
             
-            <div class="truths-grid">
-                <div class="funda-card scale-in stagger-1">
-                    <h3 class="title">Soul Exists</h3>
-                    <p>Discover the eternal essence within you that transcends the physical realm and understand the fundamental nature of consciousness.</p>
+            <div class="intro-points">
+                <div class="intro-point scale-in stagger-1">
+                    <i class="fas fa-infinity"></i>
+                    <h3>Timeless Wisdom</h3>
+                    <p>Experience the profound insights of Shrimad Rajchandraji that remain as relevant today as they were 125 years ago</p>
                 </div>
-                <div class="funda-card scale-in stagger-2">
-                    <h3 class="title">Soul is Eternal</h3>
-                    <p>Understand the timeless nature of consciousness beyond birth and death, exploring the infinite journey of the spirit.</p>
+                <div class="intro-point scale-in stagger-2">
+                    <i class="fas fa-user-graduate"></i>
+                    <h3>Expert Guidance</h3>
+                    <p>Learn directly from Pujya Gurudevshri Rakeshji's transformative pravachans and commentary</p>
                 </div>
-                <div class="funda-card scale-in stagger-3">
-                    <h3 class="title">Soul is the Doer</h3>
-                    <p>Learn about free will and the soul's role in creating karma, understanding spiritual responsibility and choice.</p>
-                </div>
-                <div class="funda-card scale-in stagger-4">
-                    <h3 class="title">Soul Receives Fruits</h3>
-                    <p>Explore the law of cause and effect in spiritual evolution, understanding how actions shape our spiritual journey.</p>
-                </div>
-                <div class="funda-card scale-in stagger-5">
-                    <h3 class="title">Liberation Exists</h3>
-                    <p>Understand the ultimate goal of spiritual practice - moksha - and the possibility of complete freedom from bondage.</p>
-                </div>
-                <div class="funda-card scale-in stagger-6">
-                    <h3 class="title">Path to Liberation</h3>
-                    <p>Discover the practical methods to achieve self-realization and the systematic approach to spiritual transformation.</p>
+                <div class="intro-point scale-in stagger-3">
+                    <i class="fas fa-compass"></i>
+                    <h3>Modern Learning</h3>
+                    <p>A perfect blend of scriptural depth, modern introspection, and experiential learning methods</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Course Details -->
-    <section id="curriculum" class="about-as section-transition">
+    <!-- Course Highlights -->
+    <section id="highlights" class="course-highlights scroll-animate">
         <div class="container">
-            <h2 class="atmasiddhi-shastra text-reveal">Course Curriculum</h2>
+            <h2 class="section-header">Course Highlights</h2>
+            <p class="section-description">
+                Everything you need for a comprehensive journey through Shri Atmasiddhi Shastra
+            </p>
             
-            <div class="course-details-grid">
-                <div class="curriculum-container fade-in-left">
-                    <h3 style="margin-bottom: 2rem; color: var(--dark-brown); font-family: var(--serif); font-size: 2rem;">12-Week Transformation Journey</h3>
-                    
-                    <div class="module-item fade-in-up stagger-1">
-                        <div class="module-number">1</div>
-                        <div class="module-content">
-                            <h4>Foundation: The Seeker's Quest</h4>
-                            <p>Introduction to spiritual seeking and the six fundamental truths</p>
-                        </div>
-                    </div>
-                    
-                    <div class="module-item fade-in-up stagger-2">
-                        <div class="module-number">2</div>
-                        <div class="module-content">
-                            <h4>Truth 1: Soul Exists</h4>
-                            <p>Deep dive into the nature of consciousness and soul</p>
-                        </div>
-                    </div>
-                    
-                    <div class="module-item fade-in-up stagger-3">
-                        <div class="module-number">3</div>
-                        <div class="module-content">
-                            <h4>Truth 2: Soul is Eternal</h4>
-                            <p>Understanding the timeless nature of the spirit</p>
-                        </div>
-                    </div>
-                    
-                    <div class="module-item fade-in-up stagger-4">
-                        <div class="module-number">4</div>
-                        <div class="module-content">
-                            <h4>Truth 3: Soul is the Doer</h4>
-                            <p>Free will, choice, and spiritual responsibility</p>
-                        </div>
-                    </div>
-                    
-                    <div class="module-item fade-in-up stagger-5">
-                        <div class="module-number">5</div>
-                        <div class="module-content">
-                            <h4>Truth 4: Soul Receives Fruits</h4>
-                            <p>Karma, consequence, and spiritual evolution</p>
-                        </div>
-                    </div>
-                    
-                    <div class="module-item fade-in-up stagger-6">
-                        <div class="module-number">6</div>
-                        <div class="module-content">
-                            <h4>Truth 5: Liberation Exists</h4>
-                            <p>The ultimate goal of spiritual practice</p>
-                        </div>
-                    </div>
-                    
-                    <div class="module-item fade-in-up stagger-1">
-                        <div class="module-number">7</div>
-                        <div class="module-content">
-                            <h4>Truth 6: Path to Liberation</h4>
-                            <p>Practical methods for self-realization</p>
-                        </div>
-                    </div>
-                    
-                    <div class="module-item fade-in-up stagger-2">
-                        <div class="module-number">8</div>
-                        <div class="module-content">
-                            <h4>Integration & Practice</h4>
-                            <p>Applying the teachings in daily life</p>
-                        </div>
-                    </div>
+            <div class="highlights-grid">
+                <div class="highlight-card scale-in stagger-1">
+                    <div class="highlight-icon"><i class="fas fa-book"></i></div>
+                    <h3>Complete Study Materials</h3>
+                    <p>Complimentary access to Shri Atmasiddhi Shastra commentary book authored by Pujya Gurudevshri with extensive written resources</p>
                 </div>
                 
-                <div class="course-info-card fade-in-right">
-                    <div class="info-item scale-in stagger-1">
-                        <div class="info-icon"><i class="fas fa-clock"></i></div>
-                        <div class="info-text">
-                            <strong>Duration</strong><br>
-                            12 weeks intensive
-                        </div>
-                    </div>
-                    
-                    <div class="info-item scale-in stagger-2">
-                        <div class="info-icon"><i class="fas fa-users"></i></div>
-                        <div class="info-text">
-                            <strong>Format</strong><br>
-                            Online & Offline Options
-                        </div>
-                    </div>
-                    
-                    <div class="info-item scale-in stagger-3">
-                        <div class="info-icon"><i class="fas fa-book"></i></div>
-                        <div class="info-text">
-                            <strong>Materials</strong><br>
-                            Complete study guide included
-                        </div>
-                    </div>
-                    
-                    <div class="info-item scale-in stagger-4">
-                        <div class="info-icon"><i class="fas fa-certificate"></i></div>
-                        <div class="info-text">
-                            <strong>Certificate</strong><br>
-                            Upon completion
-                        </div>
-                    </div>
-                    
-                    <div class="info-item scale-in stagger-5">
-                        <div class="info-icon"><i class="fas fa-language"></i></div>
-                        <div class="info-text">
-                            <strong>Languages</strong><br>
-                            English & Gujarati
-                        </div>
-                    </div>
-                    
-                    <div class="price-display gradient-text count-up">₹12,500</div>
-                    <a href="#register" class="pre-order primary magnetic-btn" style="width: 100%; text-align: center; display: block;">
-                        Enroll Now
-                    </a>
+                <div class="highlight-card scale-in stagger-2">
+                    <div class="highlight-icon"><i class="fas fa-video"></i></div>
+                    <h3>111 Hours of Video Learning</h3>
+                    <p>Transformative video pravachans by Pujya Gurudevshri with lifetime access for continuous learning</p>
+                </div>
+                
+                <div class="highlight-card scale-in stagger-3">
+                    <div class="highlight-icon"><i class="fas fa-route"></i></div>
+                    <h3>Structured Learning Path</h3>
+                    <p>24-month guided journey through 12 profound sections with weekly learning modules</p>
+                </div>
+                
+                <div class="highlight-card scale-in stagger-4">
+                    <div class="highlight-icon"><i class="fas fa-gamepad"></i></div>
+                    <h3>Interactive Experience</h3>
+                    <p>Quizzes, reflections, and gamified engagement to deepen your understanding</p>
+                </div>
+                
+                <div class="highlight-card scale-in stagger-5">
+                    <div class="highlight-icon"><i class="fas fa-laptop"></i></div>
+                    <h3>Flexible Learning</h3>
+                    <p>100% online and self-paced learning available in English with lifetime access</p>
+                </div>
+                
+                <div class="highlight-card scale-in stagger-6">
+                    <div class="highlight-icon"><i class="fas fa-certificate"></i></div>
+                    <h3>Certification Pathway</h3>
+                    <p>Earn your certificate upon successful completion with comprehensive assessments</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Awards Section -->
-    <section class="awards section-transition">
+    <!-- Course Structure - Compact Treasure Map -->
+    <section id="structure" class="course-structure scroll-animate">
         <div class="container">
-            <h2 class="text-reveal" style="font-family: var(--serif); font-size: 3rem; color: var(--dark-brown); margin-bottom: 2rem;">Course Recognition</h2>
-            <div class="awards-container">
-                <div class="award-item scale-in stagger-1">
-                    <div class="num-one count-up" data-count="1">#1</div>
-                    <p class="award-desc">Rated Course<br>in Spirituality</p>
+            <h2 class="container-header">A Step-by-Step Journey</h2>
+            <p style="text-align: center; font-size: 1.2rem; color: var(--beige); margin-bottom: 3rem;">
+                Deep dive into 12 profound sections of Shri Atmasiddhi Shastra
+            </p>
+            
+            <div class="treasure-map">
+                <div class="treasure-item fade-in-up stagger-1">
+                    <div class="treasure-number">1</div>
+                    <h4>Introduction to Atmasiddhi</h4>
+                    <p>Foundation and context of this profound spiritual text</p>
                 </div>
-                <div class="award-item scale-in stagger-2">
-                    <div class="ribbon">Transformational Learning</div>
-                    <p class="award-desc">Based on the #1 bestselling book</p>
+                
+                <div class="treasure-item fade-in-up stagger-2">
+                    <div class="treasure-number">2</div>
+                    <h4>The Spiritual Introduction</h4>
+                    <p>The seeker's quest and spiritual preparation</p>
                 </div>
-                <div class="award-item scale-in stagger-3">
-                    <div class="num-one count-up" data-count="1000">1000+</div>
-                    <p class="award-desc">Lives<br>Transformed</p>
+                
+                <div class="treasure-item fade-in-up stagger-3">
+                    <div class="treasure-number">3</div>
+                    <h4>Attributes of a Bigot</h4>
+                    <p>Understanding spiritual obstacles</p>
+                </div>
+                
+                <div class="treasure-item fade-in-up stagger-4">
+                    <div class="treasure-number">4</div>
+                    <h4>True Seeker's Qualities</h4>
+                    <p>Authentic spiritual seeker's mindset</p>
+                </div>
+                
+                <div class="treasure-item fade-in-up stagger-5">
+                    <div class="treasure-number">5</div>
+                    <h4>Six Fundamentals Named</h4>
+                    <p>Introduction to spiritual truths</p>
+                </div>
+                
+                <div class="treasure-item fade-in-up stagger-6">
+                    <div class="treasure-number">6</div>
+                    <h4>Soul Exists</h4>
+                    <p>First fundamental truth explored</p>
+                </div>
+                
+                <div class="treasure-item fade-in-up stagger-1">
+                    <div class="treasure-number">7</div>
+                    <h4>Soul is Eternal</h4>
+                    <p>Second fundamental truth</p>
+                </div>
+                
+                <div class="treasure-item fade-in-up stagger-2">
+                    <div class="treasure-number">8</div>
+                    <h4>Soul is the Doer</h4>
+                    <p>Third truth: Free will and responsibility</p>
+                </div>
+                
+                <div class="treasure-item fade-in-up stagger-3">
+                    <div class="treasure-number">9</div>
+                    <h4>Soul Receives Fruits</h4>
+                    <p>Fourth truth: Karmic consequences</p>
+                </div>
+                
+                <div class="treasure-item fade-in-up stagger-4">
+                    <div class="treasure-number">10</div>
+                    <h4>Liberation Exists</h4>
+                    <p>Fifth truth: Moksha is possible</p>
+                </div>
+                
+                <div class="treasure-item fade-in-up stagger-5">
+                    <div class="treasure-number">11</div>
+                    <h4>Path to Liberation</h4>
+                    <p>Sixth truth: Practical methods</p>
+                </div>
+                
+                <div class="treasure-item fade-in-up stagger-6">
+                    <div class="treasure-number">12</div>
+                    <h4>Disciple's Enlightenment</h4>
+                    <p>Student's realization and conclusion</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works scroll-animate">
+        <div class="container">
+            <h2 class="section-header">Your Path to Certification</h2>
+            <p class="section-description">
+                Follow these simple steps to complete your transformative journey
+            </p>
+            
+            <div class="steps-container">
+                <div class="step-card scale-in stagger-1">
+                    <div class="step-number">1</div>
+                    <h3>Complete Each Section</h3>
+                    <p>Pass quizzes and submit reflections for each of the 12 sections. Engage deeply with the material through video pravachans and study materials.</p>
+                </div>
+                
+                <div class="step-card scale-in stagger-2">
+                    <div class="step-number">2</div>
+                    <h3>Earn Minimum 70%</h3>
+                    <p>Achieve at least 70% in all assessments to progress. Our objective and subjective evaluations ensure comprehensive understanding.</p>
+                </div>
+                
+                <div class="step-card scale-in stagger-3">
+                    <div class="step-number">3</div>
+                    <h3>Complete Within 24 Months</h3>
+                    <p>Finish your entire journey within 2 years to be eligible for certification. Take your time while staying committed to your spiritual growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Components -->
+    <section class="learning-components scroll-animate">
+        <div class="container">
+            <h2 class="section-header">Your Learning Toolkit</h2>
+            <p class="section-description">
+                Comprehensive resources designed for deep understanding and practical application
+            </p>
+            
+            <div class="components-grid">
+                <div class="component-card scale-in stagger-1">
+                    <div class="component-icon"><i class="fas fa-book-open"></i></div>
+                    <h3>Book + Study Notes</h3>
+                    <p>Downloadable PDFs and physical copy options with comprehensive study materials</p>
+                </div>
+                
+                <div class="component-card scale-in stagger-2">
+                    <div class="component-icon"><i class="fas fa-play-circle"></i></div>
+                    <h3>Video Pravachans</h3>
+                    <p>Structured weekly video learnings by Pujya Gurudevshri with lifetime access</p>
+                </div>
+                
+                <div class="component-card scale-in stagger-3">
+                    <div class="component-icon"><i class="fas fa-question-circle"></i></div>
+                    <h3>Interactive Quizzes</h3>
+                    <p>Objective, auto-graded MCQs after each section to test your understanding</p>
+                </div>
+                
+                <div class="component-card scale-in stagger-4">
+                    <div class="component-icon"><i class="fas fa-pen-fancy"></i></div>
+                    <h3>Reflective Assessments</h3>
+                    <p>Subjective questions with personalized feedback for deeper introspection</p>
+                </div>
+                
+                <div class="component-card scale-in stagger-5">
+                    <div class="component-icon"><i class="fas fa-gift"></i></div>
+                    <h3>Bonus Content</h3>
+                    <p>Games, chants, guided meditations and live sessions for enhanced learning</p>
+                </div>
+                
+                <div class="component-card scale-in stagger-6">
+                    <div class="component-icon"><i class="fas fa-award"></i></div>
+                    <h3>Certification</h3>
+                    <p>Official certificate awarded upon successful completion of all assessments</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who Is This For -->
+    <section class="target-audience scroll-animate">
+        <div class="container">
+            <h2 class="section-header">Is This Course for You?</h2>
+            <p class="section-description">
+                This transformative journey is designed for seekers from all backgrounds and levels of spiritual experience
+            </p>
+            
+            <div class="audience-grid">
+                <div class="audience-item fade-in-up stagger-1">
+                    <div class="audience-icon"><i class="fas fa-heart"></i></div>
+                    <div class="audience-text">Seekers of inner peace and purpose</div>
+                </div>
+                
+                <div class="audience-item fade-in-up stagger-2">
+                    <div class="audience-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="audience-text">Students of philosophy or spirituality</div>
+                </div>
+                
+                <div class="audience-item fade-in-up stagger-3">
+                    <div class="audience-icon"><i class="fas fa-lightbulb"></i></div>
+                    <div class="audience-text">Anyone eager to live with clarity and joy</div>
+                </div>
+                
+                <div class="audience-item fade-in-up stagger-4">
+                    <div class="audience-icon"><i class="fas fa-users"></i></div>
+                    <div class="audience-text">Open to all backgrounds and beliefs</div>
+                </div>
+                
+                <div class="audience-item fade-in-up stagger-5">
+                    <div class="audience-icon"><i class="fas fa-user-plus"></i></div>
+                    <div class="audience-text">No prior spiritual knowledge required</div>
+                </div>
+                
+                <div class="audience-item fade-in-up stagger-6">
+                    <div class="audience-icon"><i class="fas fa-child"></i></div>
+                    <div class="audience-text">Open for ages 15 and above</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Testimonials -->
-    <section id="testimonials" class="testimonials section-transition">
+    <section id="testimonials" class="testimonials scroll-animate">
         <div class="container">
-            <h2 class="container-header text-reveal" style="color: white;">Student Experiences</h2>
+            <div class="testimonial-intro">
+                <h2>How Atmasiddhi Shastra has Touched Lives</h2>
+                <p>Experience the transformative power through real stories from our course participants</p>
+            </div>
             
-            <div class="testimonial-grid">
-                <div class="testimonial-card fade-in-up stagger-1">
-                    <p class="testimonial-text">
-                        "This course completely transformed my understanding of spirituality. The systematic 
-                        approach to the six truths made ancient wisdom accessible and practical for modern life."
-                    </p>
-                    <p class="testimonial-author">Priya S., Mumbai</p>
+            <div class="video-testimonials">
+                <div class="video-container fade-in-up stagger-1">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                    </div>
+                    <h4>Priya's Spiritual Journey</h4>
+                    <p>Discovering inner peace through Atmasiddhi</p>
                 </div>
                 
-                <div class="testimonial-card fade-in-up stagger-2">
-                    <p class="testimonial-text">
-                        "Pujya Gurudevshri's commentary brought the verses to life. Each session was a revelation 
-                        that deepened my spiritual practice and inner peace."
-                    </p>
-                    <p class="testimonial-author">Rajesh M., Delhi</p>
+                <div class="video-container fade-in-up stagger-2">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                    </div>
+                    <h4>Rajesh's Transformation</h4>
+                    <p>From seeking to finding true purpose</p>
                 </div>
                 
-                <div class="testimonial-card fade-in-up stagger-3">
-                    <p class="testimonial-text">
-                        "The perfect blend of online convenience and profound wisdom. This course is a must 
-                        for anyone serious about spiritual growth and self-realization."
-                    </p>
-                    <p class="testimonial-author">Anjali K., Bangalore</p>
+                <div class="video-container fade-in-up stagger-3">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                    </div>
+                    <h4>Anjali's Awakening</h4>
+                    <p>Understanding the six fundamental truths</p>
+                </div>
+                
+                <div class="video-container fade-in-up stagger-4">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                    </div>
+                    <h4>Mohan's Insight</h4>
+                    <p>Practical application of spiritual wisdom</p>
+                </div>
+                
+                <div class="video-container fade-in-up stagger-5">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                    </div>
+                    <h4>Kavita's Realization</h4>
+                    <p>Life-changing perspectives on spirituality</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="faq-section section-transition">
+    <!-- Why SRMD -->
+    <section class="why-srmd scroll-animate">
         <div class="container">
-            <h2 class="atmasiddhi-shastra text-reveal">Frequently Asked Questions</h2>
+            <h2 class="section-header">A Legacy of Spiritual Education</h2>
+            
+            <div class="srmd-content">
+                <div class="gurudev-info fade-in-left">
+                    <div class="gurudev-image-container">
+                        <div class="gurudev-image">
+                            <i class="fas fa-user-circle" style="font-size: 4rem; opacity: 0.5;"></i>
+                            <div style="position: absolute; bottom: 10px; text-align: center; width: 100%; font-size: 0.9rem;">
+                                Pujya Gurudevshri Rakeshji<br>
+                                <small style="opacity: 0.7;">(Photo to be added)</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gurudev-quote">
+                        "Shri Atmasiddhi Shastra is a journey with a well-charted, definite course. It is the clearest, most cogent outline in the odyssey of the soul, its many pitfalls and final destination."
+                        <br><strong>- Pujya Gurudevshri Rakeshji</strong>
+                    </div>
+                </div>
+                
+                <div class="gurudev-details fade-in-right">
+                    <h3>Guided by Pujya Gurudevshri Rakeshji</h3>
+                    <p>
+                        <strong>Pujya Gurudevshri Rakeshji</strong> is an enlightened Master, spiritual visionary, modern-day mystic, 
+                        and humanitarian leader. Born on 26 September 1966 in Mumbai, he showed signs of divinity from a very young age.
+                    </p>
+                    <p>
+                        An ardent devotee of Shrimad Rajchandraji, he founded Shrimad Rajchandra Mission Dharampur in 1994, 
+                        which has now grown to encompass 206 centres across six continents. Blending theory with experience 
+                        and head with heart, Pujya Gurudevshri provides powerful and practical tools for the inward journey.
+                    </p>
+                    
+                    <ul class="achievement-list">
+                        <li>Ph.D. from University of Mumbai (research on Shri Atmasiddhi Shastra)</li>
+                        <li>Master's in Philosophy with Gold Medal from University of Mumbai</li>
+                        <li>Completed 5-year bachelor's degree in 3 months</li>
+                        <li>Gandhi Seva Medal recipient (2017)</li>
+                        <li>Honorary Doctor of Divinity from Claremont School of Theology (2023)</li>
+                        <li>Founded Shrimad Rajchandra Love and Care (UN consultative status)</li>
+                        <li>Transforming millions globally through wisdom and service</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section scroll-animate">
+        <div class="container">
+            <h2 class="section-header">Frequently Asked Questions</h2>
             
             <div class="faq-container">
                 <div class="faq-item fade-in-up stagger-1">
                     <button class="faq-question" onclick="toggleFAQ(this)">
-                        Do I need prior spiritual knowledge?
+                        When can I start the course?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You can start the course immediately upon enrollment. The course is self-paced, allowing you to begin your journey at your convenience.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in-up stagger-2">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        What is the course schedule and duration?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The course duration is 24 months with structured weekly learning. You can participate at any pace you prefer, however, you need to complete the course within 2 years for certification.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in-up stagger-3">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        How much time will the coursework require each week?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Approximately 2 hours of video content per week plus additional time for quizzes, reflections, and study materials. Total weekly commitment is typically 3-4 hours.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in-up stagger-4">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        Are the assessments compulsory? What if I don't clear them?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, assessments are compulsory. There are objective (auto-graded) and subjective questions after each section. You need 70% to progress. If you don't clear an assessment, you can retake it until you achieve the minimum score.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in-up stagger-5">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        Do I need prior knowledge of Jainism or spirituality?
                         <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="faq-answer">
@@ -1101,82 +1428,68 @@
                     </div>
                 </div>
                 
+                <div class="faq-item fade-in-up stagger-6">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        How long will course materials be available?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You have lifetime access to all course materials, including videos, books, and study resources. You can revisit content anytime after completion.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in-up stagger-1">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        What are the technical requirements to join the course?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>• Stable internet connection (minimum 2 Mbps for video streaming)<br>
+                        • Modern web browser (Chrome, Firefox, Safari, Edge - latest versions)<br>
+                        • Device with at least 4GB RAM (computer, tablet, or smartphone)<br>
+                        • PDF reader for study materials<br>
+                        • Email account for course communications<br>
+                        • Audio capability for video content</p>
+                    </div>
+                </div>
+                
                 <div class="faq-item fade-in-up stagger-2">
                     <button class="faq-question" onclick="toggleFAQ(this)">
-                        What's the difference between online and offline formats?
+                        How can I clear my doubts during the course?
                         <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="faq-answer">
-                        <p>Both formats cover the same comprehensive curriculum. Online offers flexibility with recorded sessions and live Q&A, while offline provides in-person interaction and group meditation sessions.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item fade-in-up stagger-3">
-                    <button class="faq-question" onclick="toggleFAQ(this)">
-                        How much time should I dedicate weekly?
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>We recommend 3-4 hours per week: 1.5 hours for live sessions, 1 hour for self-study, and 30-60 minutes for meditation and reflection practices.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item fade-in-up stagger-4">
-                    <button class="faq-question" onclick="toggleFAQ(this)">
-                        Is there ongoing support after the course?
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Yes! Graduates join our exclusive alumni community with monthly group sessions, access to advanced workshops, and continued guidance on the spiritual path.</p>
+                        <p>You can submit your questions through the course platform, participate in live Q&A sessions, and connect with our support team. We also have a community forum for peer discussions.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Registration -->
-    <section id="register" class="registration section-transition">
+    <!-- Call to Action -->
+    <section id="enroll" class="cta-section scroll-animate">
         <div class="container">
-            <h2 class="text-reveal" style="font-size: 3rem; margin-bottom: 1rem; font-family: var(--serif);">Begin Your Transformation</h2>
-            <p class="fade-in-up stagger-1" style="font-size: 1.2rem; max-width: 600px; margin: 0 auto; color: var(--beige);">
-                Take the first step towards self-realization. Join thousands who have discovered 
-                their true nature through the timeless wisdom of Atmasiddhi Shastra.
-            </p>
-            
-            <div class="registration-form scale-in stagger-2">
-                <div class="form-group fade-in-up stagger-1">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                
-                <div class="form-group fade-in-up stagger-2">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                
-                <div class="form-group fade-in-up stagger-3">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </div>
-                
-                <div class="form-group fade-in-up stagger-4">
-                    <label for="format">Course Format</label>
-                    <select id="format" name="format" required>
-                        <option value="">Select Format</option>
-                        <option value="online">Online Course</option>
-                        <option value="offline-mumbai">Offline Course (Mumbai)</option>
-                        <option value="offline-delhi">Offline Course (Delhi)</option>
-                        <option value="hybrid">Hybrid (Online + Weekend Offline)</option>
-                    </select>
-                </div>
-                
-                <button type="submit" class="pre-order primary magnetic-btn fade-in-up stagger-5" style="width: 100%; margin-top: 1rem; padding: 15px;">
-                    Register Now - ₹12,500
-                </button>
-                
-                <p class="fade-in-up stagger-6" style="font-size: 0.9rem; margin-top: 1rem; color: var(--beige);">
-                    Secure payment • 30-day money-back guarantee • Certificate included
+            <div class="cta-content">
+                <h2>Begin Your Journey Today</h2>
+                <p>
+                    Take the first step towards self-realization. Join thousands who have discovered 
+                    their true nature through the timeless wisdom of Shri Atmasiddhi Shastra.
                 </p>
+                
+                <div class="cta-buttons-grid">
+                    <a href="#" class="pre-order primary magnetic-btn">
+                        <i class="fas fa-play"></i> Enroll Now
+                    </a>
+                    <a href="#" class="pre-order magnetic-btn">
+                        <i class="fas fa-video"></i> Watch Sample Pravachan
+                    </a>
+                    <a href="#" class="pre-order magnetic-btn">
+                        <i class="fas fa-sitemap"></i> View Course Structure
+                    </a>
+                    <a href="#" class="pre-order magnetic-btn">
+                        <i class="fas fa-support"></i> Contact Support
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -1187,27 +1500,30 @@
             <div class="container">
                 <div class="footer-content">
                     <div>
-                        <h5>Contact Information</h5>
-                        <p><i class="fas fa-phone"></i> +91 98765 43210</p>
-                        <p><i class="fas fa-envelope"></i> courses@atmasiddhishastra.com</p>
-                        <p><i class="fas fa-map-marker-alt"></i> Shrimad Rajchandra Mission Dharampur</p>
+                        <h5>Course Contact Information</h5>
+                        <p><i class="fas fa-phone"></i> +91 2636 244844</p>
+                        <p><i class="fas fa-envelope"></i> courses@srmd.org</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Shrimad Rajchandra Ashram Dharampur<br>
+                        Dist. Valsad, Gujarat, India 396126</p>
                     </div>
                     
                     <div>
                         <h5>Quick Links</h5>
-                        <p><a href="#">Course Materials</a></p>
-                        <p><a href="#">Student Portal</a></p>
-                        <p><a href="#">Support Center</a></p>
+                        <p><a href="https://www.srmd.org" target="_blank">Shrimad Rajchandra Mission Dharampur</a></p>
+                        <p><a href="https://atmasiddhi.srmd.org" target="_blank">Atmasiddhi Shastra Book</a></p>
+                        <p><a href="#" target="_blank">Student Portal</a></p>
+                        <p><a href="#" target="_blank">Support Center</a></p>
                     </div>
                     
                     <div>
-                        <h5>Follow Us</h5>
+                        <h5>Connect With Us</h5>
                         <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/srmdglobal" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.youtube.com/user/srmdglobal" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.instagram.com/srmdglobal" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/srmdglobal" target="_blank"><i class="fab fa-twitter"></i></a>
                         </div>
+                        <p style="margin-top: 1rem;"><a href="#" target="_blank">Terms and Conditions</a></p>
                     </div>
                 </div>
             </div>
@@ -1228,14 +1544,10 @@
             constructor() {
                 this.init();
                 this.setupScrollProgress();
-                this.setupParallax();
-                this.setupCountUp();
-                this.setupTextReveal();
                 this.setupMagneticButtons();
             }
 
             init() {
-                // Advanced Intersection Observer with different thresholds
                 this.observerOptions = {
                     threshold: [0, 0.1, 0.2, 0.3, 0.5],
                     rootMargin: '0px 0px -100px 0px'
@@ -1246,32 +1558,21 @@
             }
 
             setupElements() {
-                // Observe all animated elements
-                const animatedElements = document.querySelectorAll('[class*="fade-in"], [class*="scale-in"], [class*="text-reveal"], .section-transition');
+                const animatedElements = document.querySelectorAll('[class*="fade-in"], [class*="scale-in"], .scroll-animate');
                 animatedElements.forEach(el => this.observer.observe(el));
-
-                // Setup staggered animations
                 this.setupStaggeredAnimations();
             }
 
             handleIntersection(entries) {
                 entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        if (entry.intersectionRatio >= 0.1) {
-                            entry.target.classList.add('animate');
-                            
-                            // Trigger count-up animation if it's a count element
-                            if (entry.target.classList.contains('count-up')) {
-                                this.animateCountUp(entry.target);
-                            }
-                        }
+                    if (entry.isIntersecting && entry.intersectionRatio >= 0.1) {
+                        entry.target.classList.add('animate');
                     }
                 });
             }
 
             setupStaggeredAnimations() {
-                // Group elements by their parent containers for staggered effects
-                const containers = document.querySelectorAll('.truths-grid, .testimonial-grid, .awards-container, .curriculum-container, .course-info-card');
+                const containers = document.querySelectorAll('.highlights-grid, .components-grid, .audience-grid, .video-testimonials, .treasure-map, .steps-container');
                 
                 containers.forEach(container => {
                     const animatedChildren = container.querySelectorAll('[class*="stagger-"]');
@@ -1282,7 +1583,7 @@
                                 animatedChildren.forEach((child, index) => {
                                     setTimeout(() => {
                                         child.classList.add('animate');
-                                    }, index * 100);
+                                    }, index * 150);
                                 });
                             }
                         });
@@ -1303,83 +1604,16 @@
                 });
             }
 
-            setupParallax() {
-                const parallaxElements = document.querySelectorAll('.parallax');
-                
-                window.addEventListener('scroll', () => {
-                    const scrollTop = window.pageYOffset;
-                    
-                    parallaxElements.forEach(element => {
-                        const speed = element.dataset.speed || 0.5;
-                        const yPos = -(scrollTop * speed);
-                        element.style.transform = `translateY(${yPos}px)`;
-                    });
-                });
-            }
-
-            setupCountUp() {
-                // Count-up animation will be triggered by intersection observer
-            }
-
-            animateCountUp(element) {
-                const target = parseInt(element.dataset.count) || 1000;
-                const duration = 2000;
-                const increment = target / (duration / 16);
-                let current = 0;
-                
-                const updateCount = () => {
-                    current += increment;
-                    if (current < target) {
-                        element.textContent = element.textContent.includes('#') ? 
-                            `#${Math.floor(current)}` : 
-                            `${Math.floor(current)}+`;
-                        requestAnimationFrame(updateCount);
-                    } else {
-                        element.textContent = element.textContent.includes('#') ? 
-                            `#${target}` : 
-                            `${target}+`;
-                    }
-                };
-                
-                updateCount();
-            }
-
-            setupTextReveal() {
-                const textRevealElements = document.querySelectorAll('.text-reveal');
-                
-                textRevealElements.forEach(element => {
-                    const observer = new IntersectionObserver((entries) => {
-                        entries.forEach(entry => {
-                            if (entry.isIntersecting) {
-                                setTimeout(() => {
-                                    entry.target.classList.add('animate');
-                                }, 200);
-                            }
-                        });
-                    }, { threshold: 0.5 });
-                    
-                    observer.observe(element);
-                });
-            }
-
             setupMagneticButtons() {
                 const magneticButtons = document.querySelectorAll('.magnetic-btn');
                 
                 magneticButtons.forEach(btn => {
-                    btn.addEventListener('mouseenter', (e) => {
+                    btn.addEventListener('mouseenter', () => {
                         btn.style.transform = 'translateY(-3px) scale(1.05)';
                     });
                     
-                    btn.addEventListener('mouseleave', (e) => {
+                    btn.addEventListener('mouseleave', () => {
                         btn.style.transform = 'translateY(0) scale(1)';
-                    });
-                    
-                    btn.addEventListener('mousemove', (e) => {
-                        const rect = btn.getBoundingClientRect();
-                        const x = e.clientX - rect.left - rect.width / 2;
-                        const y = e.clientY - rect.top - rect.height / 2;
-                        
-                        btn.style.transform = `translateY(-3px) scale(1.05) translate(${x * 0.1}px, ${y * 0.1}px)`;
                     });
                 });
             }
@@ -1403,20 +1637,16 @@
                 });
             });
 
-            // Enhanced FAQ functionality with smooth animations
+            // Enhanced FAQ functionality
             window.toggleFAQ = function(button) {
                 const answer = button.nextElementSibling;
                 const icon = button.querySelector('i');
                 const isActive = answer.classList.contains('active');
                 
-                // Close all other FAQs with smooth animation
+                // Close all other FAQs
                 document.querySelectorAll('.faq-answer').forEach(ans => {
                     if (ans !== answer && ans.classList.contains('active')) {
-                        ans.style.maxHeight = '0';
                         ans.classList.remove('active');
-                        setTimeout(() => {
-                            ans.style.display = 'none';
-                        }, 300);
                     }
                 });
                 
@@ -1426,25 +1656,12 @@
                     }
                 });
                 
-                // Toggle current FAQ with smooth animation
+                // Toggle current FAQ
                 if (isActive) {
-                    answer.style.maxHeight = '0';
                     answer.classList.remove('active');
                     icon.style.transform = 'rotate(0deg)';
-                    setTimeout(() => {
-                        answer.style.display = 'none';
-                    }, 300);
                 } else {
-                    answer.style.display = 'block';
-                    answer.style.maxHeight = '0';
                     answer.classList.add('active');
-                    
-                    // Get the scroll height and animate to it
-                    const scrollHeight = answer.scrollHeight;
-                    setTimeout(() => {
-                        answer.style.maxHeight = scrollHeight + 'px';
-                    }, 10);
-                    
                     icon.style.transform = 'rotate(180deg)';
                 }
                 
@@ -1467,7 +1684,6 @@
                     header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
                 }
                 
-                // Hide/show header on scroll
                 if (scrollTop > lastScrollTop && scrollTop > 200) {
                     header.style.transform = 'translateY(-100%)';
                 } else {
@@ -1476,46 +1692,9 @@
                 lastScrollTop = scrollTop;
             });
 
-            // Enhanced form submission with loading state
-            document.querySelector('.registration-form').addEventListener('submit', function(e) {
-                e.preventDefault();
-                const submitBtn = this.querySelector('button[type="submit"]');
-                const originalText = submitBtn.textContent;
-                
-                // Loading state
-                submitBtn.textContent = 'Processing...';
-                submitBtn.style.opacity = '0.7';
-                submitBtn.disabled = true;
-                
-                // Simulate form processing
-                setTimeout(() => {
-                    submitBtn.textContent = '✓ Registration Submitted!';
-                    submitBtn.style.background = 'var(--gold-color)';
-                    
-                    setTimeout(() => {
-                        alert('Thank you for your interest! Our team will contact you shortly to complete your registration.');
-                        submitBtn.textContent = originalText;
-                        submitBtn.style.opacity = '1';
-                        submitBtn.style.background = '';
-                        submitBtn.disabled = false;
-                    }, 2000);
-                }, 1500);
-            });
-
-            // Add subtle scroll-based transformations
-            window.addEventListener('scroll', () => {
-                const scrolled = window.pageYOffset;
-                const parallaxElements = document.querySelectorAll('.intro-header');
-                
-                parallaxElements.forEach(element => {
-                    const speed = 0.3;
-                    element.style.transform = `translateY(${scrolled * speed}px)`;
-                });
-            });
-
             // Initialize hero animations with delay
             setTimeout(() => {
-                document.querySelectorAll('.text-reveal, .fade-in-up').forEach((el, index) => {
+                document.querySelectorAll('.intro-header, .fade-in-up').forEach((el, index) => {
                     setTimeout(() => {
                         el.classList.add('animate');
                     }, index * 200);
